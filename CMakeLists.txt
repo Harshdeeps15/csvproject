@@ -14,3 +14,9 @@ add_executable(csvproject
 
     utils/FileHasher.cpp
 )
+
+target_include_directories(csvproject PRIVATE
+    ${CMAKE_CURRENT_SOURCE_DIR}/csv
+    ${CMAKE_CURRENT_SOURCE_DIR}/processing
+    ${CMAKE_CURRENT_SOURCE_DIR}/utils
+)
